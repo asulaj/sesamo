@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+.menu{
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    display: none;
+}
+.logo-due{
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: violet;
+    margin: 0 auto;
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+.container-header{
+    display: flex;
+    height: 100%;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    height: 90vh;
+    width: 100vw;
+}
+.wrapperino{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.article{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
+}
+.aside{
+    height: 100%;
+    width: 20%;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-user{
+    padding: 1rem;
+}
+.links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    padding: 1rem;
+}
+.links a:hover{
+    background: rgb(56, 56, 56);
+}
+@media (max-width:800px){
+    .aside{
+        display: none;
+    }
+    .article{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 80%;
+        flex: 1 1 0;
+    }
+}
+@media (max-width:450px){
+    .search{
+        display: none;
+    }
+    .menu{
+        display: unset;
+    }
+    .article{
+        height: 60%;
+        flex-wrap: wrap;
+    }
+    .card{
+        flex:1 1 40%;
+    }
+}
